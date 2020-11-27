@@ -15,7 +15,7 @@
     <meta
       name="keywords"
       content="Anjali Pal, Anjali LSR, Anjali Cathedral,
-        Anjali Lady Shri Ram College, Anjali Pal lsr, Anjali lsr, Anjali Stats Lsr, Anjali Pal Lko"
+        Anjali Lady Shri Ram College, Anjali Pal lsr, Anjali lsr, Anjali Stats Lsr, Anjali Pal Lko,anjali pal,Anjali pal"
     />
     <!-- Webpage Logo -->
     <link rel="shortcut icon" href="./assets/img/favicon.ico" />
@@ -31,6 +31,18 @@
 <script>
   var myLandbot = new LandbotLivechat({
     index: 'https://chats.landbot.io/v2/H-732480-RL052SEOZCT71XR1/index.html',
+  });
+</script><script>
+  // Show a proactive message on landbot load
+  myLandbot.on('landbot-load', function() {
+    myLandbot.sendProactive({
+  "message": "Hey! Tap below to chat with me.",
+  "author": "Grey",
+  "avatar": "https://storage.googleapis.com/media.helloumi.com/153914/channels/LAPQ3NKXV1THVES295PYD6R9JNY3M09Z.gif",
+  "extra": {
+    "hide_textbox": true
+  }
+});
   });
 </script>
 
