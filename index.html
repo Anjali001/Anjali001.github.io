@@ -38,24 +38,18 @@
   </head>
 
   <body>
-    <script SameSite="None; Secure" src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
+    
+    
+    
+    <script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
 <script>
-  var myLandbot = new LandbotLivechat({
-    index: 'https://chats.landbot.io/v2/H-732480-RL052SEOZCT71XR1/index.html',
-  });
-</script><script>
-  // Show a proactive message on landbot load
-  myLandbot.on('landbot-load', function() {
-    myLandbot.sendProactive({
-  "message": "Hey! Tap below to chat with me.",
-  "author": "Grey",
-  "avatar": "https://storage.googleapis.com/media.helloumi.com/153914/channels/LAPQ3NKXV1THVES295PYD6R9JNY3M09Z.gif",
-  "extra": {
-    "hide_textbox": true
-  }
-});
+  var myLandbot = new Landbot.Livechat({
+    configUrl: 'https://chats.landbot.io/v3/H-1079684-72F0S7NPL5E8B49E/index.json',
   });
 </script>
+    
+    
+    
 
 
     <div id="particles-js">
